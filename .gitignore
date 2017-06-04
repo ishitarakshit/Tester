@@ -2,4 +2,4 @@ target/
 .classpath
 .project
 .settings/
-com/practice/BinarySearchTree_OT.java
+com/practice/OT/

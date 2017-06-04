@@ -47,7 +47,9 @@ public class SinglyLinkedList {
 	}
 	
 	public void deleteNode(int data) {
-		if(this.head.data == data) {
+		if (size == 0) { return; }
+		
+		if (this.head.data == data) {
 			this.head = head.next;
 			size--;
 		} else {
