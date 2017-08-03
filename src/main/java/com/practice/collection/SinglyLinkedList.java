@@ -1,6 +1,14 @@
 package com.practice.collection;
 
 public class SinglyLinkedList {
+	
+	class Node {
+		int data;
+		Node next = null;
+		Node(int d) {
+			data = d;
+		}
+	}
 
 	private int size = 0;
 	private Node head;

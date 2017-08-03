@@ -1,8 +1,6 @@
 package com.practice.collection;
 
 import static org.junit.Assert.*;
-import static org.mockito.Mockito.when;
-
 import org.junit.Test;
 
 import com.practice.collection.CustomHashMap;

@@ -13,12 +13,9 @@ public class BinarySearchTree {
 	}
 
 	public int calculateDistance(int[] values, int n, int node1, int node2) {
-		//Node root = createBST(values, n);
 		Node root = createBST(values, n);
 		Node lca = findLca(root, node1, node2);
 		System.out.println("lca : " + lca.data);
-		System.out.println("lca left : " + lca.left.data);
-		System.out.println("lca right : " + lca.right.data);
 		System.out.println("distance between lca and node 1: " + calculateDistance(lca, node1));
 		System.out.println("distance between lca and node 2: " + calculateDistance(lca, node2));
 		return (calculateDistance(lca, node1) + calculateDistance(lca, node2));
@@ -28,7 +25,6 @@ public class BinarySearchTree {
 		if (node.data == val) {
 			return 0;
 		}
-
 		return val > node.data ? 1 + calculateDistance(node.right, val) : 1 + calculateDistance(node.left, val);
 	}
 
@@ -40,7 +36,6 @@ public class BinarySearchTree {
 		} else {
 			return node;
 		}
-
 	}
 
 	public Node createBST(int[] values, int n) {

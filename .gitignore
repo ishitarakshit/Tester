@@ -2,4 +2,4 @@ target/
 .classpath
 .project
 .settings/
-com/practice/OT/
+src/main/java/com/practice/OT/
